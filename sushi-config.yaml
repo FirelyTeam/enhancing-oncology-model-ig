@@ -3,20 +3,20 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.mcodelite
-canonical: http://mitre.org/mcodelite
-name: McodeLite
-title: "mCODE Lite (mCODE-LITE)"
+id: fhir.eom
+canonical: https://globalalliantinc.com/enhancing-oncology-model
+name: eom
+title: "Enhancing Oncology Model"
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
+copyrightYear: 2024+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: MITRE
-  url: http://www.mitre.org
+  name: Global Alliant
+  url: https://globalalliantinc.com
 #  email: 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -43,7 +43,7 @@ dependencies:
 #
 pages:
   index.md:
-    title: mCODE Lite
+    title: Enhancing Oncology Model
   biomarker.md:
     title: Tumor marker test
   cancer_condition.md:
@@ -104,10 +104,10 @@ menu:
 # ContactDetail.
 #
 contact:
-  - name: May Terry
+  - name: Denise St. Clair
     telecom:
       - system: email # phone | fax | email | pager | url | sms | other
-        value: mayT@mitre.org
+        value: denise.s@globalalliantinc.com
         use: work
 #
 #

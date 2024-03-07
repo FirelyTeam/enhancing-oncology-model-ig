@@ -6,7 +6,7 @@
 
 Cancer patient identification information is exchanged referencing the [mCODE Cancer Patient](https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html) resource.  
 
-The essential fields (Must Support or Cardinality greater than 0..*) to be provided in the [mCODE-FH](StructureDefinition-mcode-fh-cancer-patient.html) resource are:
+The essential fields (Must Support or Cardinality greater than 0..*) to be provided in the [mCODE-FH](StructureDefinition-eom-cancer-patient.html) resource are:
 
 |Element name                       | mCODE Element                    |  Cardinality       | Guidance                                            |
 |----------------------------------|----------------------------------|:------------------:|-----------------------------------------------------|

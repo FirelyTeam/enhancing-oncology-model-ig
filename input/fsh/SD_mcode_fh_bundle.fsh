@@ -1,8 +1,8 @@
-Profile: EomMCODEPatientBundle
+Profile: EomPatientBundle
 Parent: Bundle
-Id: mcode-patient-bundle
-Title: "EOM mCODE Patient Bundle Profile"
-Description: "An example collection of EOM mCODE cancer patient data."
+Id: eom-patient-bundle
+Title: "EOM Patient Bundle Profile"
+Description: "An example collection of EOM cancer patient data."
 * ^extension[FMM].valueInteger = 1
 * type  = #collection
 * entry 1..* MS

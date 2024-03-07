@@ -34,7 +34,7 @@ The EOM IG specifier can collectively represent these requirements in 2 ways:
 
 Partial examples are included in this IG for illustrative purposes:
 * [EOM as a CapabilityStatement](CapabilityStatement-eom-mcode-server.html)
-* [EOM as a FHIR Bundle](StructureDefinition-mcode-patient-bundle.html)
+* [EOM as a FHIR Bundle](StructureDefinition-eom-patient-bundle.html)
 
 
 **TBD**
