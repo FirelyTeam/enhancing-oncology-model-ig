@@ -14,8 +14,8 @@ The essential fields (Must Support or Cardinality greater than 0..*) to be provi
 |----------------------------------|----------------------------------|:------------------:|-----------------------------------------------------|
 | code                             | Observation.code                 |     1..1           |  set to a value set asserting history of metatstases.|
 | status                           | Observation.status               |     1..1           | EOM: only `final` status. |
-| subject                          | Reference(McodeFhPatient)        |     1..1           |  |
-| effectiveDateTime                | Reference(McodeFhPatient)        |     1..1           |  |
+| subject                          | Reference(EomCancerPatient)          |     1..1           |  |
+| effectiveDateTime                | Reference(EomCancerPatient)          |     1..1           |  |
 {: .grid}
 
 **TBD**

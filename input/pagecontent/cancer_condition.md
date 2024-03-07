@@ -6,7 +6,7 @@
 
 Cancer condition identification information is exchanged referencing the [mCODE Primary Cancer Condition](https://hl7.org/fhir/us/mcode/STU3/StructureDefinition-mcode-primary-cancer-condition.html) resource.  
 
-The essential fields (Must Support or Cardinality greater than 0..*) to be provided in the [mCODE-FH](StructureDefinition-mcode-fh-cancer-condition.html) resource are:
+The essential fields (Must Support or Cardinality greater than 0..*) to be provided in the [mCODE-FH](StructureDefinition-eom-primary-cancer-condition.html) resource are:
 
 
 | Element name                     | mCODE Element Path                              |  Cardinality   | Guidance                                                   |

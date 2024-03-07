@@ -1,8 +1,8 @@
 // example snippet of an EOM bundle
 
-Instance: mcode-patient-bundle-jane-anyperson
-InstanceOf: EomMCODEPatientBundle
-Description: "Extended example as a mCODE Patient Bundle"
+Instance: eom-patient-bundle-jane-anyperson
+InstanceOf: EomPatientBundle
+Description: "Extended example as a EOM Patient Bundle"
 * entry[0].resource = cancer-patient-jane-anyperson
 * entry[=].fullUrl = "http://example.org/fhir/Patient/cancer-patient-jane-anyperson"
 * entry[+].resource = primary-cancer-condition-breast
