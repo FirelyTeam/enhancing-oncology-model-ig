@@ -48,7 +48,7 @@ Description: "Example of TNM Clinical Stage Group"
 * hasMember[2] = Reference(tnm-clinical-distant-metastases-category-cM0)
 
 Instance: tnm-clinical-distant-metastases-category-cM0
-InstanceOf: McodeMCategory
+InstanceOf: EomMCategory
 Description: "Example of TNM Clinical Distant Metastases Category"
 //* code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * code = SCT#399387003 "cM category"
@@ -60,7 +60,7 @@ Description: "Example of TNM Clinical Distant Metastases Category"
 * valueCodeableConcept = SCT#1229901006 "American Joint Committee on Cancer cM0 (qualifier value)"
 
 Instance: tnm-clinical-primary-tumor-category-cT3
-InstanceOf: McodeTCategory
+InstanceOf: EomTCategory
 Description: "Example of TNM Clinical Primary Tumor Category"
 //* code = LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * code = SCT#399504009 "cT category"
@@ -72,7 +72,7 @@ Description: "Example of TNM Clinical Primary Tumor Category"
 * effectiveDateTime = "2019-04-01"
 
 Instance: tnm-clinical-regional-nodes-category-cN3
-InstanceOf: McodeNCategory
+InstanceOf: EomMCategory
 Description: "Example of TNM Clinical Regional Nodes Category"
 //* code = LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
 * code = SCT#399534004 "cN category"

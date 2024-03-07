@@ -33,7 +33,7 @@ Description: "EOM primary cancer condition for use for federal health initiative
 /* Example instance of minimal cancer staging */
 Profile: EomTCategory
 Parent: McodeTCategory
-Id: eom-cancer-tnm-primary-tumor-category
+Id: eom-tnm-primary-tumor-category
 Title: "EOM TNM Primary Tumor Category Profile"
 Description: "EOM data set for TNM Primary Tumor Category"
 
@@ -42,7 +42,7 @@ Description: "EOM data set for TNM Primary Tumor Category"
 
 Profile: EomNCategory
 Parent: McodeNCategory
-Id: eom-cancer-tnm-regional-node-category
+Id: eom-tnm-regional-node-category
 Title: "EOM TNM Regional Node Category Profile"
 Description: "EOM data set for TNM Regional Node Category"
 
@@ -51,9 +51,17 @@ Description: "EOM data set for TNM Regional Node Category"
 
 Profile: EomMCategory
 Parent: McodeMCategory
-Id: eom-cancer-tnm-distant-metastasis-category
+Id: eom-tnm-distant-metastasis-category
 Title: "EOM TNM Distant Metastasis Category Profile"
 Description: "EOM data set for TNM Distant Metastasis Category"
+
+* . MS  // make the whole profile must-support
+
+Profile: EomStageGroup
+Parent: McodeStageGroup
+Id: eom-tnm-stage-group
+Title: "EOM TNM Stage Group Profile"
+Description: "EOM data set for TNM Stage Group Profile"
 
 * . MS  // make the whole profile must-support
 
