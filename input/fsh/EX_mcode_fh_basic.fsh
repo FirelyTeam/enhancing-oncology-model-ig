@@ -113,7 +113,7 @@ Description: "Example of Practitioner"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
 
 Instance: no-history-of-metastatic-cancer 
-InstanceOf: McodeHxMetastaticCancer
+InstanceOf: EomHxMetastaticCancer
 Description: "Example showing no history of metastatic cancer"
 * status = #final 
 * code = SCT#1287652008 "History of metastatic malignant neoplasm (situation)"
