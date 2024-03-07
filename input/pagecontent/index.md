@@ -58,7 +58,7 @@ Profiles that are included in this guidance do not change mCODE. The only change
 
 Our thanks to the contributing organizations which drive the guidance in this IG:
 * Global Alliant
-* Firely
+* Firely USA Inc
 * Centers of Medicare and Medicaid Services (CMS)
 * MITRE Corporation
 
