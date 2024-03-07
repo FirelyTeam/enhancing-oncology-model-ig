@@ -85,7 +85,7 @@ Description: "Example of TNM Clinical Regional Nodes Category"
 
 
 Instance: cancer-disease-status-jane-anyperson
-InstanceOf: McodeDiseaseStatus
+InstanceOf: EomDiseaseStatus
 Description: "Extended example: example showing disease status (patient's condition improved)"
 * extension[evidenceType].valueCodeableConcept = SCT#363679005 "Imaging (procedure)"
 * status = #final "final"
@@ -124,7 +124,7 @@ Description: "Example showing no history of metastatic cancer"
 
 
 Instance: tumor-marker-test-er-jane-anyperson
-InstanceOf: McodeTumorMarkerTest
+InstanceOf: EomTumorMarkerTest
 Description: "Extended example: example showing ER status"
 * status = #final "final"
 * code = LNC#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
