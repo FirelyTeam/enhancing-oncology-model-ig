@@ -48,7 +48,7 @@ Description: "Example of TNM Clinical Stage Group"
 * hasMember[2] = Reference(tnm-clinical-distant-metastases-category-cM0)
 
 Instance: tnm-clinical-distant-metastases-category-cM0
-InstanceOf: EomMCategory
+InstanceOf: McodeMCategory
 Description: "Example of TNM Clinical Distant Metastases Category"
 //* code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * code = SCT#399387003 "cM category"
@@ -60,7 +60,7 @@ Description: "Example of TNM Clinical Distant Metastases Category"
 * valueCodeableConcept = SCT#1229901006 "American Joint Committee on Cancer cM0 (qualifier value)"
 
 Instance: tnm-clinical-primary-tumor-category-cT3
-InstanceOf: EomTCategory
+InstanceOf: McodeTCategory
 Description: "Example of TNM Clinical Primary Tumor Category"
 //* code = LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * code = SCT#399504009 "cT category"
@@ -72,7 +72,7 @@ Description: "Example of TNM Clinical Primary Tumor Category"
 * effectiveDateTime = "2019-04-01"
 
 Instance: tnm-clinical-regional-nodes-category-cN3
-InstanceOf: EomNCategory
+InstanceOf: McodeNCategory
 Description: "Example of TNM Clinical Regional Nodes Category"
 //* code = LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
 * code = SCT#399534004 "cN category"
@@ -85,7 +85,7 @@ Description: "Example of TNM Clinical Regional Nodes Category"
 
 
 Instance: cancer-disease-status-jane-anyperson
-InstanceOf: EomDiseaseStatus
+InstanceOf: McodeDiseaseStatus
 Description: "Extended example: example showing disease status (patient's condition improved)"
 * extension[evidenceType].valueCodeableConcept = SCT#363679005 "Imaging (procedure)"
 * status = #final "final"
@@ -113,7 +113,7 @@ Description: "Example of Practitioner"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
 
 Instance: no-history-of-metastatic-cancer 
-InstanceOf: EomHxMetastaticCancer
+InstanceOf: McodeHxMetastaticCancer
 Description: "Example showing no history of metastatic cancer"
 * status = #final 
 * code = SCT#1287652008 "History of metastatic malignant neoplasm (situation)"
@@ -124,7 +124,7 @@ Description: "Example showing no history of metastatic cancer"
 
 
 Instance: tumor-marker-test-er-jane-anyperson
-InstanceOf: EomTumorMarkerTest
+InstanceOf: McodeTumorMarkerTest
 Description: "Extended example: example showing ER status"
 * status = #final "final"
 * code = LNC#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
