@@ -12,13 +12,13 @@
 The Enhancing Oncology Model (EOM) is a Center for Medicare and Medicaid Innovation (CMMI) (Innovation Center) alternative payment model designed to promote high quality, person-centered care, advance health equity, encourage better care coordination, improve access to care, reduce costs, and improve outcomes for Medicare fee-for-service (FFS) beneficiaries with cancer who receive cancer treatment. EOM builds on lessons from the Oncology Care Model (OCM) and shares certain features with OCM, including episode-based payments that financially incentivize physician group practices (PGPs) to improve care and lower costs. 
 
 EOM participants are oncology PGPs that prescribe and administer chemotherapy for cancer. The model is centered on 6-month episodes of care triggered by receipt of a qualifying initiating cancer therapy for an included cancer type. The model includes seven cancer types: 
-•	Breast Cancer
-•	Chronic Leukemia 
-•	Lung Cancer 
-•	Lymphoma 
-•	Multiple Myeloma 
-•	Prostate Cancer
-•	Small Intestine/Colorectal Cancer 
+ï¿½	Breast Cancer
+ï¿½	Chronic Leukemia 
+ï¿½	Lung Cancer 
+ï¿½	Lymphoma 
+ï¿½	Multiple Myeloma 
+ï¿½	Prostate Cancer
+ï¿½	Small Intestine/Colorectal Cancer 
 
 The EOM IG provides guidance on the details, terminologies, and definitions necessary for collection and reporting of EOM Clinical Data Elements (CDEs) that the Centers for Medicare & Medicaid Services (CMS) requires to be reported by EOM participants to CMS throughout the course of the model. 
 
