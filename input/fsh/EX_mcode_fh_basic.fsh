@@ -2,8 +2,8 @@
 Instance: cancer-patient-jane-anyperson
 InstanceOf: EomCancerPatient
 Description: "Example of Patient"
-* identifier[MBI].system = "http://hl7.org/fhir/sid/us-mbi"
-* identifier[MBI].value = "1CA0CA0CC00"
+* identifier[CmsMBI].system = "http://hl7.org/fhir/sid/us-mbi"
+* identifier[CmsMBI].value = "1CA0CA0CC00"
 * identifier[1].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[1].type = IDTYPE#MR "Medical Record Number"
 * identifier[1].system = "http://hospital.globalalliantinc.com"
