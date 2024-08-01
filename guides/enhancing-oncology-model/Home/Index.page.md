@@ -1,3 +1,9 @@
+---
+canonical: https://globalalliantinc.com/enhancing-oncology-model/ImplementationGuide/fhir.eom
+---
+
+{{page:Metadata-table}}
+
 ### Purpose
 
 <blockquote class="stu-note">
