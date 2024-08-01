@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Artifacts
+  filename: Artifacts.page.md
+- name: 'Resource Profile: EOM Cancer Patient Profile'
+  filename: Resource-Profile-EOM-Cancer-Patient-Profile.page.md

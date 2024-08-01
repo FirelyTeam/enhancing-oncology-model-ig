@@ -4,6 +4,8 @@ fsh-generated
 temp
 template
 output
+.simplifier
+fhirpkg.lock.json
 
 # Ignore large files and frequently changed files in input-cache #
 ##################################################################

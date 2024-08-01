@@ -41,23 +41,23 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-pages:
-  index.md:
-    title: Enhancing Oncology Model
-  biomarker.md:
-    title: Tumor marker test
-  cancer_condition.md:
-    title: Cancer diagnosis and staging data
-  cancer_patient.md:
-    title: Patient data
-  disease_status.md:
-    title: Cancer disease status
-  download.md:
-    title: Downloads
-  eom.md:
-    title: Use Case - mCODE FH in Enhancing Oncology Model (EOM)
-  hx_of_metastatic_cancer.md:
-    title: History of metastatic cancer
+# pages:
+#   index.md:
+#     title: Enhancing Oncology Model
+#   biomarker.md:
+#     title: Tumor marker test
+#   cancer_condition.md:
+#     title: Cancer diagnosis and staging data
+#   cancer_patient.md:
+#     title: Patient data
+#   disease_status.md:
+#     title: Cancer disease status
+#   download.md:
+#     title: Downloads
+#   eom.md:
+#     title: Use Case - mCODE FH in Enhancing Oncology Model (EOM)
+#   hx_of_metastatic_cancer.md:
+#     title: History of metastatic cancer
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -68,8 +68,8 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-parameters:
-   excludettl: true
+# parameters:
+#    excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -80,19 +80,19 @@ parameters:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  General Guidance: 
-    Patient: cancer_patient.html
-    Cancer Condition: cancer_condition.html
-    Biomarkers: biomarker.html
-    Disease Status: disease_status.html
-    History of Metastatic Cancer: hx_of_metastatic_cancer.html
-  FHIR Artifacts: 
-    Artifacts: artifacts.html
-    Downloads: download.html
-  Use Cases:
-    Enhancing Oncology Model: eom.html
+# menu:
+#   Home: index.html
+#   General Guidance: 
+#     Patient: cancer_patient.html
+#     Cancer Condition: cancer_condition.html
+#     Biomarkers: biomarker.html
+#     Disease Status: disease_status.html
+#     History of Metastatic Cancer: hx_of_metastatic_cancer.html
+#   FHIR Artifacts: 
+#     Artifacts: artifacts.html
+#     Downloads: download.html
+#   Use Cases:
+#     Enhancing Oncology Model: eom.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

@@ -1,3 +1,0 @@
-### Needing Further Discussion
-
-#### Questions
