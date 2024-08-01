@@ -3,12 +3,6 @@ topic: template-for-profile
 expand: 2
 ---
 
-#### Referenced by
-
-This section lists the profiles that reference this resource, if any.
-
-{{page:FQL-referenced-by}}
-
 #### Examples
 
 This section lists the examples for this profile, if any.
@@ -40,15 +34,3 @@ These are different views on this resource:
 	{{link}}
 </tab>
 </tabs>
-
-## Terminology Bindings
-
-This section lists the terminology bindings in this profile, if any.
-
-{{page:FQL-profile-bindings}}
-
-## Constraints
-
-This section lists the constraints (invariants) defined within this resource, if any.
-
-{{page:FQL-profile-constraints}}
