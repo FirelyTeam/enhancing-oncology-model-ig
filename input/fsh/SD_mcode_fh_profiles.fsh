@@ -10,14 +10,6 @@ Description: "An EOM cander patient. A profile was created to ensure that there 
 * identifier contains CmsMBI 1..1
 * identifier[CmsMBI] MS
 * identifier[CmsMBI].system = "http://hl7.org/fhir/sid/us-mbi"
-* identifier contains modelID 1..1
-* identifier[modelID] MS
-* identifier[modelID].type = "U"
-* identifier[modelID].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier contains eomID 1..1
-* identifier[eomID] MS
-* identifier[eomID].type = "FI"
-* identifier[eomID].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 
 * . MS
 
