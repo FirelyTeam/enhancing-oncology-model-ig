@@ -1,0 +1,33 @@
+{
+  "name": "fhir.eom",
+  "version": "0.1.0",
+  "author": "Global Alliant Inc.",
+  "license": "CC0-1.0",
+  "directories": {
+    "lib": "package",
+    "example": "example"
+  },
+  "title": "Enhancing Oncology Model",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "type": "IG",
+  "maintainers": [
+    {
+      "name": "Global Alliant Inc."
+    },
+    {
+      "name": "Denise St. Clair",
+      "email": "denise.s@globalalliantinc.com"
+    }
+  ],
+  "canonical": "https://globalalliantinc.com/enhancing-oncology-model",
+  "url": "file:///Users/ward/fhir-specs/r4/CMS/enhancing-oncology-model-ig/output",
+  "dependencies": {
+    "hl7.fhir.us.mcode": "3.0.0-ballot",
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.terminology.r4": "5.5.0",
+    "hl7.fhir.us.core": "5.0.1",
+    "hl7.fhir.uv.genomics-reporting": "2.0.0"
+  }
+}

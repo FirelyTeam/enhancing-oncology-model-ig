@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Table of Contents
+  filename: Table-of-Contents.page.md
+- name: General Guidance
+  filename: General-Guidance
+- name: FHIR Artifacts
+  filename: FHIR-Artifacts
+- name: Use Cases
+  filename: Use-Cases
+- name: Downloads
+  filename: Downloads.page.md
