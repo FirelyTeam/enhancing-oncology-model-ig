@@ -18,7 +18,5 @@
   filename: Resource-Profile-EOM-TNM-Primary-Tumor-Category-Profile.page.md
 - name: 'Resource Profile: EOM TNM Regional Node Category Profile'
   filename: Resource-Profile-EOM-TNM-Regional-Node-Category-Profile.page.md
-- name: 'Resource Profile: EOM TNM Stage Group Profile'
-  filename: Resource-Profile-EOM-TNM-Stage-Group-Profile.page.md
 - name: 'Resource Profile: EOM Tumor Marker Test'
   filename: Resource-Profile-EOM-Tumor-Marker-Test.page.md

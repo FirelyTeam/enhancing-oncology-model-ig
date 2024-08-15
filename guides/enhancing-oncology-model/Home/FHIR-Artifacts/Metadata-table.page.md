@@ -2,6 +2,7 @@
 topic: Metadata-table
 ---
 
+
 <table class="colsi">
   <tr>
     <td colspan="4">
@@ -18,11 +19,6 @@ topic: Metadata-table
   </tr>
 </table>
 
-<fql output="inline">
-	from
-		Resource
-	where
-		url = %canonical
-	select
-		description
-</fql>
+#### Introduction
+
+{{narrative}}

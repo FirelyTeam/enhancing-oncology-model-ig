@@ -1,12 +1,18 @@
 - name: Index
   filename: Index.page.md
-- name: Patient
-  filename: Patient.page.md
-- name: Cancer Condition
-  filename: Cancer-Condition.page.md
+- name: Primary Cancer Condition
+  filename: Primary-Cancer-Condition.page.md
+- name: TNM Primary Tumor
+  filename: TNM-Primary-Tumor.page.md
+- name: TNM Nodal Disease
+  filename: TNM-Nodal-Disease.page.md
+- name: TNM Metastasis
+  filename: TNM-Metastasis.page.md
 - name: Biomarkers
   filename: Biomarkers.page.md
-- name: Disease Status
-  filename: Disease-Status.page.md
-- name: History of Metastatic Cancer
-  filename: History-of-Metastatic-Cancer.page.md
+- name: Validations and Errors
+  filename: Validations-and-Errors.page.md
+- name: Authentication Process for EOM
+  filename: Authentication-Process-for-EOM.page.md
+- name: EOM Data Submission Process
+  filename: EOM-Data-Submission-Process.page.md

@@ -3,6 +3,7 @@ canonical: https://globalalliantinc.com/enhancing-oncology-model/StructureDefini
 ResourceType: Patient
 ---
 
+
 {{page:Metadata-table}}
 
 {{page:template-for-profile}}
