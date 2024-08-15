@@ -1,0 +1,242 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.eom",
+  "url": "https://globalalliantinc.com/enhancing-oncology-model/ImplementationGuide/fhir.eom",
+  "version": "0.1.0",
+  "name": "eom",
+  "title": "Enhancing Oncology Model",
+  "status": "draft",
+  "publisher": "Global Alliant Inc.",
+  "contact": [
+    {
+      "name": "Global Alliant Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://globalalliantinc.com"
+        }
+      ]
+    },
+    {
+      "name": "Denise St. Clair",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "denise.s@globalalliantinc.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.eom",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.mcode",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "id": "hl7_fhir_us_mcode"
+    },
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "5.0.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    },
+    {
+      "packageId": "hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "id": "hl7_fhir_uv_genomics_reporting"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Observation/cancer-disease-status-jane-anyperson"
+        },
+        "name": "cancer-disease-status-jane-anyperson",
+        "description": "Extended example: example showing disease status (patient's condition improved)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/cancer-patient-jane-anyperson"
+        },
+        "name": "cancer-patient-jane-anyperson",
+        "description": "Example of Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-cancer-disease-status"
+        },
+        "exampleBoolean": false,
+        "name": "EOM Cancer Disease Status Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-cancer-patient"
+        },
+        "exampleBoolean": false,
+        "name": "EOM Cancer Patient Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-history-of-metastatic-cancer"
+        },
+        "description": "EOM data set for identifying the history of metastatic cancer.",
+        "exampleBoolean": false,
+        "name": "EOM History of Metastatic Cancer"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-patient-bundle"
+        },
+        "description": "An example collection of EOM cancer patient data.",
+        "exampleBoolean": false,
+        "name": "EOM Patient Bundle Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-primary-cancer-condition"
+        },
+        "exampleBoolean": false,
+        "name": "EOM Primary Cancer Condition Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-tnm-distant-metastasis-category"
+        },
+        "exampleBoolean": false,
+        "name": "EOM TNM Distant Metastasis Category Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-tnm-primary-tumor-category"
+        },
+        "exampleBoolean": false,
+        "name": "EOM TNM Primary Tumor Category Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-tnm-regional-node-category"
+        },
+        "exampleBoolean": false,
+        "name": "EOM TNM Regional Node Category Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-tnm-stage-group"
+        },
+        "description": "EOM data set for TNM Stage Group Profile",
+        "exampleBoolean": false,
+        "name": "EOM TNM Stage Group Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/eom-tumor-marker-test"
+        },
+        "exampleBoolean": false,
+        "name": "EOM Tumor Marker Test"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/eom-patient-bundle-jane-anyperson"
+        },
+        "name": "eom-patient-bundle-jane-anyperson",
+        "description": "Extended example as a EOM Patient Bundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/eom-mcode-server"
+        },
+        "name": "mCODE EOM Server: Get Bundle for an EOM Patient",
+        "description": "EOM example for creating an mCODE-derived capability statement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/no-history-of-metastatic-cancer"
+        },
+        "name": "no-history-of-metastatic-cancer",
+        "description": "Example showing no history of metastatic cancer",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/primary-cancer-condition-breast"
+        },
+        "name": "primary-cancer-condition-breast",
+        "description": "Example of Primary Cancer Condition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-distant-metastases-category-cM0"
+        },
+        "name": "tnm-clinical-distant-metastases-category-cM0",
+        "description": "Example of TNM Clinical Distant Metastases Category",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-primary-tumor-category-cT3"
+        },
+        "name": "tnm-clinical-primary-tumor-category-cT3",
+        "description": "Example of TNM Clinical Primary Tumor Category",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-regional-nodes-category-cN3"
+        },
+        "name": "tnm-clinical-regional-nodes-category-cN3",
+        "description": "Example of TNM Clinical Regional Nodes Category",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tumor-marker-test-er-jane-anyperson"
+        },
+        "name": "tumor-marker-test-er-jane-anyperson",
+        "description": "Extended example: example showing ER status",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+        },
+        "name": "us-core-practitioner-kyle-anydoc",
+        "description": "Example of Practitioner",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "draft"
+      }
+    ]
+  }
+}

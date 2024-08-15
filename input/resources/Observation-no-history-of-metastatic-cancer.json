@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "no-history-of-metastatic-cancer",
+  "meta": {
+    "profile": [
+      "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-history-of-metastatic-cancer"
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "1287652008",
+        "system": "http://snomed.info/sct",
+        "display": "History of metastatic malignant neoplasm (situation)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-jane-anyperson"
+  },
+  "effectiveDateTime": "2018-11-16",
+  "valueBoolean": false
+}

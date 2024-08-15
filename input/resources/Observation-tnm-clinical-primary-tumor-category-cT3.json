@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "tnm-clinical-primary-tumor-category-cT3",
+  "meta": {
+    "profile": [
+      "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "399504009",
+        "display": "cT category"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-jane-anyperson"
+  },
+  "effectiveDateTime": "2019-04-01",
+  "performer": [
+    {
+      "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1228938002",
+        "display": "American Joint Committee on Cancer cT3 (qualifier value)"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "897275008",
+        "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+      }
+    ]
+  }
+}

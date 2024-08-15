@@ -1,0 +1,42 @@
+{
+  "resourceType": "Patient",
+  "id": "cancer-patient-jane-anyperson",
+  "meta": {
+    "profile": [
+      "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-cancer-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode": "M"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-mbi",
+      "value": "1CA0CA0CC00"
+    }
+  ],
+  "name": [
+    {
+      "family": "Anyperson",
+      "given": [
+        "Jane",
+        "B."
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1951-01-20",
+  "address": [
+    {
+      "line": [
+        "234 Anyway St"
+      ],
+      "city": "Anytown",
+      "postalCode": "12345",
+      "country": "US"
+    }
+  ]
+}
