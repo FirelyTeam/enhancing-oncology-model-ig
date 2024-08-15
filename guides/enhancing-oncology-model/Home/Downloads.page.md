@@ -1,1 +1,0 @@
-The source code for this Implementation Guide can be found on IHE GitHub [https://github.com/IHE/ITI.BasicAudit](https://github.com/IHE/ITI.BasicAudit).
