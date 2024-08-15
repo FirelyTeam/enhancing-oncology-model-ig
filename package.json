@@ -12,6 +12,7 @@
     "4.0.1"
   ],
   "type": "IG",
+  "jurisdiction": "urn:iso:std:iso:3166#US",
   "maintainers": [
     {
       "name": "Global Alliant Inc."
