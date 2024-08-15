@@ -226,8 +226,18 @@
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
-      "page": []
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown",
+          "page": [
+        {}
+      ]
+    }
+      ]
     },
+
     "parameter": [
       {
         "code": "copyrightyear",
