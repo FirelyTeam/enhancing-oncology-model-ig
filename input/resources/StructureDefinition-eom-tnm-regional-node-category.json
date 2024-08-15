@@ -1,11 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "eom-tnm-regional-node-category",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p>The EOM TNM Regional Nodes Category Profile links directly to the mCODE TNM Regional Nodes Category Profile.</p> \r\n<p>The TNM Regional Nodes Category Profile is <b>only required to be submitted for beneficiaries with the following attributed cancer types</b>:</p>\r\n<ul>\r\n<li>Breast Cancer</li>\r\n<li>Lung Cancer</li>\r\n<li>Prostate Cancer</li>\r\n<li>Small Intestine/Colorectal Cancer</li></ul></ul>\r\n\r\n<p>The following data elements are required to be submitted using the EOM TNM Regional Nodes Category Profile to successfully meet Performance Period (PP) 1 Clinical Data Element (CDE) requirements:</p>\r\n<ul>\r\n<li>Observation.code</li>\r\n<ul>\r\n<li>Even though the standard allows for this observation.code to use both the TNM Regional Nodes Staging Type Value Set and TNM Regional Node Staging Type Maximum Value Set, only values from the <a href=\"https://hl7.org/fhir/us/mcode/ValueSet-mcode-tnm-regional-nodes-staging-type-vs.html\">TNM Regional Nodes Staging Type Value Set</a> are permitted for EOM, specifically: </li>\r\n<ul>\r\n<li>277206009 N category</li>\r\n<li>399534004 cN category</li>\r\n<li>371494008 pN category</li>\r\n\r\n</li></ul>\r\n<li>NOTE: The corresponding observation.status must be \"final\" for EOM.</li></ul>\r\n<br>\r\n<li>Observation.value[CodeableConcept] </li>\r\n<ul>\r\n<li>Again, although the standard allows for this observation.code to use both the TNM Regional Nodes Category Value Set and TNM Regional Nodes Maximum Value Set, only values from the <a href=\"https://hl7.org/fhir/us/mcode/ValueSet-mcode-tnm-regional-nodes-category-vs.html\">TNM Regional Nodes Category Value Set</a> are permitted for EOM.</li></ul>\r\n<ul>\r\n<li><b>NOTE</b>: To meet EOM PPI reporting requirements the specific TNM Regional Nodes Category Value Set codes reported must be properly associated with the beneficiary's primary cancer ICD-10 Diagnosis Code. Refer to the <a href=\"https://build.fhir.org/ig/FirelyTeam/enhancing-oncology-model-ig/tnm_nodal_disease.html\">General Guidance - TNM Nodal Disease</a> page for additional guidance.</li></ul>\r\n<br>\r\n<li>Observation.method</li>\r\n<ul>\r\n<li>Observation.method should be a valid value from the <a href=\"https://hl7.org/fhir/us/mcode/ValueSet-mcode-tnm-staging-method-vs.html\">TNM Staging Method Value Set</a>.</li></ul></ul>\r\n\r\n</div>"
+  },
   "url": "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category",
   "name": "EomNCategory",
   "title": "EOM TNM Regional Node Category Profile",
   "status": "draft",
-  "description": "EOM data set for TNM Regional Node Category",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

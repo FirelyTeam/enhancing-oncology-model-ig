@@ -1,11 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "eom-primary-cancer-condition",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<p>The EOM Primary Cancer Condition Profile links directly to the mCODE Primary Cancer Condition Profile. The following data elements are required to be submitted using the EOM Primary Cancer Condition Profile to successfully meet Performance Period (PP) 1 Clinical Data Element (CDE) requirements:</p>\r\n\r\n<ul>\r\n <li>ICD-10 Diagnosis Code: Condition.code\r\n  <ul>\r\n   <li>Use the <a href= \"https://hl7.org/fhir/us/mcode/STU3/ValueSet-mcode-primary-cancer-disorder-vs.html\">Primary Cancer Disorder Value Set</a></li>\r\n   <li>The Condition.code submitted should not only be a code inlcuded in the Cancer Disorder Value Set, but should also be selected from the designated list of available condition codes based on the patient's attributed cancer type. EOM requires that the Condition.code be aligned with the subset of ICD-10 codes designated for each specific attributed cancer type. The EOM-specific codes by attributed cancer type are listed under <a href= \"https://build.fhir.org/ig/FirelyTeam/enhancing-oncology-model-ig/primary_cancer_condition.html)\">General Guidance - Primary Cancer Condition</a>.</li>\r\n  </ul>\r\n </li>\r\n <li>Initial Date of Diagnosis: Condition.extension:assertedDate\r\n  <ul>\r\n   <li>NOTE: The date should be in the format YYYY-MM-DD.</li>\r\n  </ul>\r\n </li>\r\n <li>Recurrence or Relapse Clinical Status: condition.clinicalStatus\r\n  <ul>\r\n   <li>NOTE: The corresponding condition.verificationStatus must be \"confirmed\" for EOM.</li>\r\n  </ul>\r\n </li>\r\n <li>Histology: condition.extension:histologyMorphologyBehavior\r\n  <ul>\r\n   <li>Use the <a href= \"https://hl7.org/fhir/us/mcode/STU3/ValueSet-mcode-histology-morphology-behavior-vs.html\">Histology Morphology Behavior Value Set</a></li>\r\n   <li>If the condition.extension:histologyMorphologyBehavior codes submitted from the Histology Morphology Behavior Value Set are not aligned with one of the histology codes included in the <a href=\"https://www.cms.gov/files/document/eom-histology-cancer-types.xlsx\">EOM Histology Cancer Type Guide</a>, the histology will be considered in the \"Other Histology\" category for the EOM clinical data submission</li>\r\n  </ul>\r\n </li>\r\n</ul>\r\n</div>"
+  },
   "url": "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition",
   "name": "EomPrimaryCancerCondition",
   "title": "EOM Primary Cancer Condition Profile",
   "status": "draft",
-  "description": "EOM primary cancer condition for use for federal health initiatives. A profile was created to ensure that there is at least a Medicare identifier included.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

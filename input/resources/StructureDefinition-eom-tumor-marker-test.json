@@ -1,11 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "eom-tumor-marker-test",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n <p>The EOM Tumor Marker Test Profile links directly to the mCODE Tumor Marker Test Profile.</p> \r\n <p>The EOM Tumor Marker Test Profile is <b>only required to be submitted for beneficiaries whose attributed cancer type is Breast Cancer.</b></p>\r\n <p>The EOM Tumor Marker Test Profile must be submitted for each <b>Estrogen Receptor (ER), Progesterone Receptor (PR), and HER2 Tests</b>. The test result reported should be the test result collected at initial diagnosis. If more than one test result exists with a final status in the beneficiary's record, the earliest value during the episode should be reported. If a test result within the episode does not exist, the test result closest to the start of the episode should be reported. For each ER, PR, and HER2, a qualitative or a quantitative (test code and quantity) response should be provided. </p>\r\n\r\n <p>The following data elements are required to be submitted using the EOM Tumor Marker Test Profile to successfully meet Performance Period (PP) 1 Clinical Data Element (CDE) requirements:</p>\r\n \r\n <ul>\r\n  <li>Observation.value[CodeableConcept]\r\n   <ul>\r\n    <li>For each ER, PR, and HER2, qualitative results can be reported via an Observation.value[CodeableConcept]. The LOINC code responses permitted for EOM are:\r\n     <ul>\r\n      <li>Positive LA6576-8</li>\r\n      <li>Negative LA6577-6</li>\r\n      <li>Indeterminate LA11884-6</li>\r\n      <li>Not Tested LA13538-6</li>\r\n     </ul>\r\n    </li>\r\n   </ul>\r\n  </li>\r\n  <li>Observation.code\r\n   <ul>\r\n    <li>For each ER, PR, and HER2, there are a specific set of <a href=\"https://hl7.org/fhir/us/mcode/ValueSet-mcode-tumor-marker-test-vs.html\">Tumor Marker Test Value Set</a> codes permitted for EOM. Refer to the <a href=\"https://build.fhir.org/ig/FirelyTeam/enhancing-oncology-model-ig/biomarkers.html\">General Guidance - Biomarkers</a> page for the specific list of codes permitted for EOM for each ER, PR, and HER2.</li>\r\n    <li>NOTE: The corresponding observation.status must be \"final\" for EOM.</li>\r\n   </ul>\r\n  </li>\r\n  <li>Observation.value[Quantity]\r\n   <ul>\r\n    <li>Observation.value[Quantity] should be a numeric value with up to 2 decimal places. If  Observation.value[CodeableConcept] is blank and Observation.dataAbsentReason is not set to either \"unknown\" or \"not-applicable,\" then there should be a valid value for Observation.value[Quantity] for each ER, PR, and HER2. </li>\r\n   </ul>\r\n  </li>\r\n </ul>\r\n</div>"
+  },
   "url": "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tumor-marker-test",
   "name": "EomTumorMarkerTest",
   "title": "EOM Tumor Marker Test",
   "status": "draft",
-  "description": "EOM data set for tumor marker test",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

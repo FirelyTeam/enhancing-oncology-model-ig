@@ -1,11 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "eom-cancer-disease-status",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p>The EOM Cancer Disease Status Profile links directly to the mCODE Cancer Disease Status Profile. The following data elements are required to be submitted using the EOM Cancer Disease Status Profile to successfully meet Performance Period (PP) 1 Clinical Data Element (CDE) requirements:</p>\r\n\r\n<ul>\r\n <li>Current Clinical Status Trend: observation.value[CodeableConcept]\r\n  <ul>\r\n   <li>Even though the standard allows for this observation.value to use both the Condition Status Trend Value Set and Condition Status Trend Maximum Value Set, only values from the <a href=\"https://hl7.org/fhir/us/mcode/STU3/ValueSet-mcode-condition-status-trend-vs.html\">Condition Status Trend Value Set</a> are permitted for EOM, specifically:\r\n    <ul>\r\n     <li>268910001 Patient's condition improved (finding)</li>\r\n     <li>359746009 Patient's condition stable (finding)</li>\r\n     <li>271299001 Patient's condition worsened (finding)</li>\r\n     <li>709137006 Patient condition undetermined (finding)</li>\r\n     <li>103338009 In full remission (qualifier value)</li>\r\n     <li>103337004 In partial remission (qualifier value)</li>\r\n     <li>399409002 Distant metastasis present (finding)</li>\r\n    </ul>\r\n   </li>\r\n   <li>NOTE: The corresponding observation.status must be \"final\" for EOM.</li>\r\n  </ul>\r\n </li>\r\n <li>Current Clinical Status Date: Observation.effective[DateTime]\r\n  <ul>\r\n   <li>NOTE: The date should be in the format YYYY-MM-DD and this date must be within the attributed beneficiary's episode dates.</li>\r\n  </ul>\r\n </li>\r\n</ul>\r\n</div>"
+  },
   "url": "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-cancer-disease-status",
   "name": "EomDiseaseStatus",
   "title": "EOM Cancer Disease Status Profile",
   "status": "draft",
-  "description": "EOM data set for cancer disease status",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
