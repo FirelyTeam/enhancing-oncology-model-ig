@@ -1,0 +1,1 @@
+Please find [the latest versions of the Enhancing Oncology Model Implementation Guide on Simplifier.net](https://simplifier.net/published-guide/enhancing-oncology-model/versions).

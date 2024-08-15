@@ -1,0 +1,89 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.eom",
+  "url": "https://globalalliantinc.com/enhancing-oncology-model/ImplementationGuide/fhir.eom",
+  "version": "0.1.0",
+  "name": "eom",
+  "title": "Enhancing Oncology Model",
+  "status": "draft",
+  "publisher": "Global Alliant Inc.",
+  "contact": [
+    {
+      "name": "Global Alliant Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://globalalliantinc.com"
+        }
+      ]
+    },
+    {
+      "name": "Denise St. Clair",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "denise.s@globalalliantinc.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.eom",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.mcode",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "id": "hl7_fhir_us_mcode"
+    },
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "5.0.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    },
+    {
+      "packageId": "hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "id": "hl7_fhir_uv_genomics_reporting"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions"
+    }
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown",
+          "page": [
+            {}
+          ]
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "draft"
+      }
+    ]
+  }
+}

@@ -12,6 +12,7 @@
     "4.0.1"
   ],
   "type": "IG",
+  "jurisdiction": "urn:iso:std:iso:3166#US",
   "maintainers": [
     {
       "name": "Global Alliant Inc."
@@ -22,7 +23,6 @@
     }
   ],
   "canonical": "https://globalalliantinc.com/enhancing-oncology-model",
-  "url": "file:///Users/ward/fhir-specs/r4/CMS/enhancing-oncology-model-ig/output",
   "dependencies": {
     "hl7.fhir.us.mcode": "3.0.0-ballot",
     "hl7.fhir.r4.core": "4.0.1",
