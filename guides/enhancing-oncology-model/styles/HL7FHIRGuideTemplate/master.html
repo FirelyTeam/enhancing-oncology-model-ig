@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TODO:$PACKAGEID\{{ page-title }} - FHIR v{{ guide-fhir-version }}</title>
+    <title>{{variable:scope}}\{{ page-title }} - FHIR v{{ guide-fhir-version }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -416,14 +416,11 @@ Prism.languages.yang={comment:/\/\*[\s\S]*?\*\/|\/\/.*/,string:{pattern:/"(?:[^\
         <div id="family-nav">
           <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="{{content}}/{{style-folder}}/content/assets/images/fhir-logo-www.png"/> </a>
         </div>
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="TODO:$LINKTOSEARCH"><img alt="Search FHIR" src="{{content}}/{{style-folder}}/content/assets/images/search.png"/></a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">{{ guide-title }}</span>
             <br/>
-            <span style="display:inline-block;">{{ guide-version }} - TODO:$STATUS
+            <span style="display:inline-block;">{{ guide-version }}
   <!-- <img alt="{{jurisdiction.name}} flag" src="{{content}}/{{style-folder}}/content/assets/images/{{jurisdiction.flag}}.svg" height="16" title="{{jurisdiction.name}}"/> -->
             </span>
           </p>
@@ -507,17 +504,14 @@ Prism.languages.yang={comment:/\/\*[\s\S]*?\*\/|\/\/.*/,string:{pattern:/"(?:[^\
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; TODO:$COPYRIGHTYEAR <a style="color:var(--footer-hyperlink-text-color)" href="TODO:$PUBLISHERURL">TODO:$PUBLISHERNAME</a>.  Package {{variable:scope}} based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/{{variable:guide-fhir-version}}">FHIR {{variable:guide-fhir-version}}</a>. Generated <span title="{{publish-date}}">{{publish-date, format=yyy-MM-ddd}}</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com/">Global Alliant Inc.</a>.  Package {{variable:scope}} based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/{{variable:guide-fhir-version}}">FHIR {{variable:guide-fhir-version}}</a>. Generated <span title="{{publish-date}}">{{publish-date, format=yyy-MM-ddd}}</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-            Links: <a style="color: var(--footer-hyperlink-text-color)" href="{{content}}/../home/table-of-contents">Table of Contents</a> |
-            <a style="color: var(--footer-hyperlink-text-color)" href="TODO:$QAPAGE">QA Report</a>
 
             <!-- FROM HL7 FHIR BASE TEMPLATE -->
-             | <a style="color:var(--footer-hyperlink-text-color)" target="_blank" href="TODO:$LINKTOGUIDEVERSIONHISTORY">Version History</a> |
+             <a style="color:var(--footer-hyperlink-text-color)" target="_blank" href="https://simplifier.net/published-guide/enhancing-oncology-model/versions">Version History</a> |
              <a style="color:var(--footer-hyperlink-text-color)" rel="license" href="https://hl7.org/fhir/{{ guide-fhir-version }}/license.html"><img style="border-style: none;" alt="CC0" src="{{content}}/{{style-folder}}/content/assets/images/cc0.png"/></a> |
              <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-             <a style="color:var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+             <a style="color:var(--footer-hyperlink-text-color)" target="_blank" href="https://simplifier.net/enhancing-oncology-model-ig/~issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
