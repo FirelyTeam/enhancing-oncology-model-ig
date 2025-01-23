@@ -1607,7 +1607,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueCanonical": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-max-vs"
+              "valueCanonical": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-vs"
             }
           ],
           "strength": "preferred",
