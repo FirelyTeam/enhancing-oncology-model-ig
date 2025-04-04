@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset",
   "version": "0.0.1",
-  "title": "TumorMarkerTestValueSet",
+  "title": "TumorMarkerTestResultValueSet",
   "status": "draft",
   "compose": {
     "include": [
@@ -32,7 +32,7 @@
   "description": "Valid values for Observation.value in EOM Tumor Marker Test",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TumorMarkerTestValueSet</h2><tt>https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset</tt><p>Valid values for Observation.value in EOM Tumor Marker Test</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TumorMarkerTestResultValueSet</h2><tt>https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset</tt><p>Valid values for Observation.value in EOM Tumor Marker Test</p></div>"
   },
   "name": "EOM_Tumor_Marker_Test_ValueSet",
   "date": "2025-01-22T00:00:00.000Z"

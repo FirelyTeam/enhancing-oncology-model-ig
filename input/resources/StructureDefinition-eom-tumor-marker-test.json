@@ -2311,7 +2311,7 @@
         "binding": {
           "strength": "required",
           "description": "LOINC codes",
-          "valueSet": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-valueset"
+          "valueSet": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset"
         },
         "mapping": [
           {
