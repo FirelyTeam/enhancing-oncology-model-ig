@@ -2253,18 +2253,6 @@
               }
             ],
             "code": "CodeableConcept"
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                "valueBoolean": true
-              }
-            ],
-            "code": "string"
-          },
-          {
-            "code": "Ratio"
           }
         ],
         "condition": [
@@ -5124,7 +5112,27 @@
           "strength": "required",
           "description": "LOINC codes",
           "valueSet": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset"
-        }
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Quantity"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ],
+            "code": "CodeableConcept"
+          }
+        ],
       }
     ]
   }
