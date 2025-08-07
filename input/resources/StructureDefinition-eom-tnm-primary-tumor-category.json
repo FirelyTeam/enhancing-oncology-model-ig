@@ -134,6 +134,13 @@
             "expression": "dataAbsentReason.empty() or value.empty()",
             "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))",
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          {
+            "key": "obs-8",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary breast cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Breast Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-breast-cancer-disorder-vs') implies Observation.value.memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-breast-cancer-vs')",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "mustSupport": true,
@@ -4405,6 +4412,14 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "constraint": [
+          {
+            "key": "obs-8",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary breast cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Breast Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-breast-cancer-disorder-vs') implies Observation.value.memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-breast-cancer-vs')",
+          }
+        ],
         "mustSupport": true
       },
       {
