@@ -4,20 +4,374 @@
     "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-lymphoma-disorder-vs",
     "name": "EOMPrimaryLymphomaDisorderVS",
     "title": "EOM Primary Lymphoma Disorder Value Set",
-    "description": "Types of Lymphoma conditions from ICD-10-CM.",
+    "description": "TODO: Use compose.filter 'descendent-of C84' and expand with supported FHIR and/or terminology server. Types of Lymphoma conditions from ICD-10-CM.",
     "status": "draft",
-    "experimental": false,
-    "date": "2025-08-07T00:00:00.000Z",
+    "date": "2025-08-20T00:00:00.000Z",
     "copyright": "The ICD-10 is copyrighted by the World Health Organization (WHO), which owns and publishes the classification. WHO has authorized the development of an adaptation of ICD-10 for use in the United States for U.S. government purposes. As agreed, all modifications to the ICD-10 must conform to WHO conventions for the ICD. ICD-10-CM was developed following a thorough evaluation by a Technical Advisory Panel and extensive additional consultation with physician groups, clinical coders, and others to assure clinical accuracy and utility.",
     "compose": {
         "include": [
             {
-                "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-                "filter": [
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "concept": [
                     {
-                        "property": "concept",
-                        "op": "descendent-of",
-                        "value": "C84"
+                        "code": "C84",
+                        "display": "Mature T/NK-cell lymphomas"
+                    },
+                    {
+                        "code": "C84.0",
+                        "display": "Mycosis fungoides"
+                    },
+                    {
+                        "code": "C84.00",
+                        "display": "Mycosis fungoides, unspecified site"
+                    },
+                    {
+                        "code": "C84.01",
+                        "display": "Mycosis fungoides, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.02",
+                        "display": "Mycosis fungoides, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.03",
+                        "display": "Mycosis fungoides, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.04",
+                        "display": "Mycosis fungoides, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.05",
+                        "display": "Mycosis fungoides, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.06",
+                        "display": "Mycosis fungoides, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.07",
+                        "display": "Mycosis fungoides, spleen"
+                    },
+                    {
+                        "code": "C84.08",
+                        "display": "Mycosis fungoides, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.09",
+                        "display": "Mycosis fungoides, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.1",
+                        "display": "Sezary disease"
+                    },
+                    {
+                        "code": "C84.10",
+                        "display": "Sezary disease, unspecified site"
+                    },
+                    {
+                        "code": "C84.11",
+                        "display": "Sezary disease, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.12",
+                        "display": "Sezary disease, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.13",
+                        "display": "Sezary disease, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.14",
+                        "display": "Sezary disease, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.15",
+                        "display": "Sezary disease, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.16",
+                        "display": "Sezary disease, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.17",
+                        "display": "Sezary disease, spleen"
+                    },
+                    {
+                        "code": "C84.18",
+                        "display": "Sezary disease, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.19",
+                        "display": "Sezary disease, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.4",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified"
+                    },
+                    {
+                        "code": "C84.40",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, unspecified site"
+                    },
+                    {
+                        "code": "C84.41",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.42",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.43",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.44",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.45",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.46",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.47",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, spleen"
+                    },
+                    {
+                        "code": "C84.48",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.49",
+                        "display": "Peripheral T-cell lymphoma, not elsewhere classified, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.6",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive"
+                    },
+                    {
+                        "code": "C84.60",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, unspecified site"
+                    },
+                    {
+                        "code": "C84.61",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.62",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.63",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.64",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.65",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.66",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.67",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, spleen"
+                    },
+                    {
+                        "code": "C84.68",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.69",
+                        "display": "Anaplastic large cell lymphoma, ALK-positive, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.7",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative"
+                    },
+                    {
+                        "code": "C84.70",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, unspecified site"
+                    },
+                    {
+                        "code": "C84.71",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.72",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.73",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.74",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.75",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.76",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.77",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, spleen"
+                    },
+                    {
+                        "code": "C84.78",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.79",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.7A",
+                        "display": "Anaplastic large cell lymphoma, ALK-negative, breast"
+                    },
+                    {
+                        "code": "C84.A",
+                        "display": "Cutaneous T-cell lymphoma, unspecified"
+                    },
+                    {
+                        "code": "C84.A0",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, unspecified site"
+                    },
+                    {
+                        "code": "C84.A1",
+                        "display": "Cutaneous T-cell lymphoma, unspecified lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.A2",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.A3",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.A4",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.A5",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.A6",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.A7",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, spleen"
+                    },
+                    {
+                        "code": "C84.A8",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.A9",
+                        "display": "Cutaneous T-cell lymphoma, unspecified, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.Z",
+                        "display": "Other mature T/NK-cell lymphomas"
+                    },
+                    {
+                        "code": "C84.Z0",
+                        "display": "Other mature T/NK-cell lymphomas, unspecified site"
+                    },
+                    {
+                        "code": "C84.Z1",
+                        "display": "Other mature T/NK-cell lymphomas, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.Z2",
+                        "display": "Other mature T/NK-cell lymphomas, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.Z3",
+                        "display": "Other mature T/NK-cell lymphomas, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.Z4",
+                        "display": "Other mature T/NK-cell lymphomas, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.Z5",
+                        "display": "Other mature T/NK-cell lymphomas, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.Z6",
+                        "display": "Other mature T/NK-cell lymphomas, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.Z7",
+                        "display": "Other mature T/NK-cell lymphomas, spleen"
+                    },
+                    {
+                        "code": "C84.Z8",
+                        "display": "Other mature T/NK-cell lymphomas, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.Z9",
+                        "display": "Other mature T/NK-cell lymphomas, extranodal and solid organ sites"
+                    },
+                    {
+                        "code": "C84.9",
+                        "display": "Mature T/NK-cell lymphomas, unspecified"
+                    },
+                    {
+                        "code": "C84.90",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, unspecified site"
+                    },
+                    {
+                        "code": "C84.91",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, lymph nodes of head, face, and neck"
+                    },
+                    {
+                        "code": "C84.92",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, intrathoracic lymph nodes"
+                    },
+                    {
+                        "code": "C84.93",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, intra-abdominal lymph nodes"
+                    },
+                    {
+                        "code": "C84.94",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, lymph nodes of axilla and upper limb"
+                    },
+                    {
+                        "code": "C84.95",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, lymph nodes of inguinal region and lower limb"
+                    },
+                    {
+                        "code": "C84.96",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, intrapelvic lymph nodes"
+                    },
+                    {
+                        "code": "C84.97",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, spleen"
+                    },
+                    {
+                        "code": "C84.98",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, lymph nodes of multiple sites"
+                    },
+                    {
+                        "code": "C84.99",
+                        "display": "Mature T/NK-cell lymphomas, unspecified, extranodal and solid organ sites"
                     }
                 ]
             }

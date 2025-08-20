@@ -4,7 +4,7 @@
     "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-colorectal-cancer-disorder-vs",
     "name": "EOMPrimaryColorectalCancerDisorderVS",
     "title": "EOM Primary Colorectal Cancer Disorder Value Set",
-    "description": "Types of Colorectal cancer conditions from ICD-10-CM.",
+    "description": "TODO: Use compose.filter 'descendent-of C18, C19, C20, except C18.1' and expand with supported FHIR and/or terminology server. Types of Colorectal cancer conditions from ICD-10-CM.",
     "status": "draft",
     "experimental": false,
     "date": "2025-08-07T00:00:00.000Z",
@@ -13,36 +13,54 @@
         "include": [
             {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "filter": [
+                "concept": [
                     {
-                        "property": "concept",
-                        "op": "descendent-of",
-                        "value": "C18"
+                        "code": "C18",
+                        "display": "Malignant neoplasm of colon"
                     },
                     {
-                        "property": "concept",
-                        "op": "!=",
-                        "value": "C18.1"
-                    }
-                ]
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "filter": [
+                        "code": "C18.0",
+                        "display": "Malignant neoplasm of cecum"
+                    },
                     {
-                        "property": "concept",
-                        "op": "descendent-of",
-                        "value": "C19"
-                    }
-                ]
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "filter": [
+                        "code": "C18.2",
+                        "display": "Malignant neoplasm of ascending colon"
+                    },
                     {
-                        "property": "concept",
-                        "op": "descendent-of",
-                        "value": "C20"
+                        "code": "C18.3",
+                        "display": "Malignant neoplasm of hepatic flexure"
+                    },
+                    {
+                        "code": "C18.4",
+                        "display": "Malignant neoplasm of transverse colon"
+                    },
+                    {
+                        "code": "C18.5",
+                        "display": "Malignant neoplasm of splenic flexure"
+                    },
+                    {
+                        "code": "C18.6",
+                        "display": "Malignant neoplasm of descending colon"
+                    },
+                    {
+                        "code": "C18.7",
+                        "display": "Malignant neoplasm of sigmoid colon"
+                    },
+                    {
+                        "code": "C18.8",
+                        "display": "Malignant neoplasm of overlapping sites of colon"
+                    },
+                    {
+                        "code": "C18.9",
+                        "display": "Malignant neoplasm of colon, unspecified"
+                    },
+                    {
+                        "code": "C19",
+                        "display": "Malignant neoplasm of rectosigmoid junction"
+                    },
+                    {
+                        "code": "C20",
+                        "display": "Malignant neoplasm of rectum"
                     }
                 ]
             }
