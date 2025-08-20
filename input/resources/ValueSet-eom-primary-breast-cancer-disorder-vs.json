@@ -5,8 +5,8 @@
     "name": "EOMPrimaryBreastCancerDisorderVS",
     "title": "EOM Primary Breast Cancer Disorder Value Set",
     "status": "draft",
-    "date": "2025-08-07T00:00:00.000Z",
-    "description": "TODO: Codes should be encoded with compose.filter 'descendent-of C-50' and expanded with FHIR and/or terminology server. All ICD-10-CM C50 sub-codes (e.g., C50.0, C50.01, C50.011 …). Includes both parent and leaf categories.",
+    "date": "2025-08-20T00:00:00.000Z",
+    "description": "TODO: Use compose.filter 'descendent-of C-50' and expand with FHIR and/or terminology server. All ICD-10-CM C50 sub-codes (e.g., C50.0, C50.01, C50.011 …). Includes both parent and leaf categories.",
     "copyright": "The ICD-10 is copyrighted by the World Health Organization (WHO), which owns and publishes the classification. WHO has authorized the development of an adaptation of ICD-10 for use in the United States for U.S. government purposes. As agreed, all modifications to the ICD-10 must conform to WHO conventions for the ICD. ICD-10-CM was developed following a thorough evaluation by a Technical Advisory Panel and extensive additional consultation with physician groups, clinical coders, and others to assure clinical accuracy and utility.",
     "compose": {
         "include": [

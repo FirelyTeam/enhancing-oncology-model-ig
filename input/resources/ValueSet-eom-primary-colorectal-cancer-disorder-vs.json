@@ -6,8 +6,7 @@
     "title": "EOM Primary Colorectal Cancer Disorder Value Set",
     "description": "TODO: Use compose.filter 'descendent-of C18, C19, C20, except C18.1' and expand with supported FHIR and/or terminology server. Types of Colorectal cancer conditions from ICD-10-CM.",
     "status": "draft",
-    "experimental": false,
-    "date": "2025-08-07T00:00:00.000Z",
+    "date": "2025-08-20T00:00:00.000Z",
     "copyright": "The ICD-10 is copyrighted by the World Health Organization (WHO), which owns and publishes the classification. WHO has authorized the development of an adaptation of ICD-10 for use in the United States for U.S. government purposes. As agreed, all modifications to the ICD-10 must conform to WHO conventions for the ICD. ICD-10-CM was developed following a thorough evaluation by a Technical Advisory Panel and extensive additional consultation with physician groups, clinical coders, and others to assure clinical accuracy and utility.",
     "compose": {
         "include": [

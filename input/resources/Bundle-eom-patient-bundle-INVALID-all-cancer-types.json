@@ -1,0 +1,1586 @@
+{
+  "resourceType": "Bundle",
+  "id": "eom-patient-bundle-INVALID-all-cancer-types",
+  "meta": {
+    "profile": [
+      "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-patient-bundle"
+    ]
+  },
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "all-cancer-patient",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-cancer-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-mbi",
+            "value": "9ME9ME9MM99"
+          }
+        ],
+        "name": [
+          {
+            "given": ["Mallory"],
+            "family": "Infortunatus"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1965-01-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Patient/all-cancer-patient"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-breast",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C50.31",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of lower-inner quadrant of breast, female"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-breast"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-lung",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C34.10",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of upper lobe, unspecified bronchus or lung"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-lung"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-prostate",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C61",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of prostate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-prostate"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-colorectal",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C18.9",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of colon, unspecified"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-colorectal"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-small-intestine",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C17.9",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of small intestine, unspecified"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-small-intestine"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-lymphoma",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C84.0",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Mycosis fungoides"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-lymphoma"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-mesothelioma",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C45.9",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Mesothelioma, unspecified"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-mesothelioma"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "example-primary-all-cancer-condition-appendix",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-primary-cancer-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C18.1",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Malignant neoplasm of appendix"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        }
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Condition/example-primary-all-cancer-condition-appendix"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-breast-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-oncologist"
+          }
+        ],
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-breast"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "display": "cT category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lung-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a breast cancer T code, not lung"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-01-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-breast-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-breast-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-breast"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "371494008",
+              "system": "http://snomed.info/sct",
+              "display": "pN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-small-intestine-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a breast cancer N code, not small intestine"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-01-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-breast-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-breast-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-breast"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "display": "cM category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lymphoma-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a breast cancer M code, not lymphoma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-01-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-breast-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-lung-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lung"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "78873005",
+              "system": "http://snomed.info/sct",
+              "display": "T category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-prostate-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lung cancer T code, not prostate"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-02-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-lung-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-lung-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lung"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "display": "cN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-breast-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lung cancer N code, not breast"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-02-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-lung-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-lung-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lung"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "277208005",
+              "system": "http://snomed.info/sct",
+              "display": "M category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-small-intestine-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lung cancer M code, not small intestine"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-02-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-lung-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-prostate-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-prostate"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "384625004",
+              "system": "http://snomed.info/sct",
+              "display": "pT category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-colorectal-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a prostate cancer T code, not colorectal"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-03-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-prostate-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-prostate-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-prostate"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "277206009",
+              "system": "http://snomed.info/sct",
+              "display": "N category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-mesothelioma-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a prostate cancer N code, not mesothelioma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-03-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-prostate-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-prostate-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-prostate"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "display": "cM category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-colorectal-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a prostate cancer M code, not colorectal"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-03-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-prostate-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-colorectal-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-colorectal"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "display": "cT category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lymphoma-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a colorectal cancer T code, not lymphoma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-04-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-colorectal-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-colorectal-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-colorectal"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "371494008",
+              "system": "http://snomed.info/sct",
+              "display": "pN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lymphoma-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a colorectal cancer N code, not lymphoma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-04-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-colorectal-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-colorectal-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-colorectal"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "371497001",
+              "system": "http://snomed.info/sct",
+              "display": "pM category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-breast-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a colorectal cancer M code, not breast"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-04-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-colorectal-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-small-intestine-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-small-intestine"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "78873005",
+              "system": "http://snomed.info/sct",
+              "display": "T category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-mesothelioma-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a small intestine cancer T code, not mesothelioma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-05-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-small-intestine-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-small-intestine-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-small-intestine"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "371494008",
+              "system": "http://snomed.info/sct",
+              "display": "pN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-appendix-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a small intestine cancer N code, not appendix"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-05-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-small-intestine-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-small-intestine-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-small-intestine"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "277208005",
+              "system": "http://snomed.info/sct",
+              "display": "M category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-mesothelioma-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a small intestine cancer M code, not mesothelioma"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-05-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-small-intestine-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-lymphoma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lymphoma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "384625004",
+              "system": "http://snomed.info/sct",
+              "display": "pT category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-appendix-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lymphoma T code, not appendix"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-06-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-lymphoma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-lymphoma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lymphoma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "277206009",
+              "system": "http://snomed.info/sct",
+              "display": "N category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-breast-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lymphoma N code, not breast"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-06-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-lymphoma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-lymphoma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-lymphoma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "display": "cM category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-prostate-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a lymphoma M code, not prostate"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-06-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-lymphoma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-mesothelioma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-mesothelioma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "display": "cT category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-breast-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a mesothelioma T code, not breast"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-07-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-mesothelioma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-mesothelioma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-mesothelioma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "display": "cN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lung-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a mesothelioma N code, not lung"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-07-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-mesothelioma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-distant-metastasis-category-mesothelioma-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-distant-metastasis-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-mesothelioma"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "371497001",
+              "system": "http://snomed.info/sct",
+              "display": "pM category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lung-M-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be a mesothelioma M code, not lung"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-07-03"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-distant-metastasis-category-mesothelioma-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-primary-tumor-category-appendix-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-primary-tumor-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-appendix"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "78873005",
+              "system": "http://snomed.info/sct",
+              "display": "T category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-lung-T-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be an appendix cancer T code, not lung"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-08-01"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-primary-tumor-category-appendix-INVALID"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-regional-node-category-appendix-INVALID",
+        "meta": {
+          "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-tnm-regional-node-category"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/example-primary-all-cancer-condition-appendix"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "display": "cN category"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "invalid-prostate-N-code",
+              "system": "http://snomed.info/sct",
+              "display": "This should be an appendix cancer N code, not prostate"
+            }
+          ]
+        },
+        "status": "final",
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/all-cancer-patient"
+        },
+        "effectiveDateTime": "2024-08-02"
+      },
+      "fullUrl": "http://globalalliantinc.com/fhir/Observation/tnm-regional-node-category-appendix-INVALID"
+    }
+  ],
+  "type": "collection"
+}

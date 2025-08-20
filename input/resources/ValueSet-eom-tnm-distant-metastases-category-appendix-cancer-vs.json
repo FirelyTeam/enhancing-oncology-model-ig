@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
-  "id": "eom-tnm-distant-metastases-category-lung-cancer-vs",
-  "url": "http://hl7.org/fhir/us/enhancing-oncology-model/ValueSet/eom-tnm-distant-metastases-category-lung-cancer-vs",
+  "id": "eom-tnm-distant-metastases-category-appendix-cancer-vs",
+  "url": "http://hl7.org/fhir/us/enhancing-oncology-model/ValueSet/eom-tnm-distant-metastases-category-appendix-cancer-vs",
   "version": "1.0.0",
-  "name": "EOMTNMDistantMetastasesCategoryLungCancerVS",
-  "title": "EOM TNM Distant Metastases Category Lung Cancer ValueSet",
+  "name": "EOMTNMDistantMetastasesCategoryAppendixCancerVS",
+  "title": "EOM TNM Distant Metastases Category Appendix Cancer ValueSet",
   "status": "active",
   "experimental": false,
   "date": "2025-08-20T00:00:00.000Z",
-  "description": "TNM Distant Metastases Category codes for Lung Cancer (ICD-10 Range C34.00-C34.92) used in the Enhancing Oncology Model (EOM).",
+  "description": "TNM Distant Metastases Category codes for Appendix Cancer (ICD-10 C61) used in the Enhancing Oncology Model (EOM).",
   "copyright": "This material contains content from SNOMED CT® (http://www.snomed.org/). SNOMED CT is a comprehensive clinical terminology, owned by the International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between the IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {
     "include": [
