@@ -1,6 +1,6 @@
 {
   "name": "globalalliant.us.eom",
-  "version": "1.0.1-rc2",
+  "version": "1.0.2",
   "description": "Aligning mCODE cancer data with the CMS Enhancing Oncology Model to support PP1 data collection",
   "author": "Global Alliant Inc.",
   "license": "CC0-1.0",
@@ -25,7 +25,7 @@
   "canonical": "https://globalalliantinc.com/enhancing-oncology-model",
   "jurisdiction": "urn:iso:std:iso:3166#US",
   "dependencies": {
-    "hl7.fhir.us.mcode": "3.0.0-ballot",
+    "hl7.fhir.us.mcode": "3.0.0",
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.terminology.r4": "5.5.0",
     "hl7.fhir.us.core": "5.0.1",

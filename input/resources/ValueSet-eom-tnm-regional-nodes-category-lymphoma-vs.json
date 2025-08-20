@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "eom-tnm-regional-nodes-category-lymphoma-vs",
+  "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-regional-nodes-category-lymphoma-vs",
+  "name": "EOMTNMRegionalNodesCategoryLymphomaVS",
+  "title": "EOM TNM Regional Nodes Category for Lymphoma Value Set",
+  "description": "Types of TNM Regional Nodes Categories for Lymphoma from SNOMED CT.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-08-20T00:00:00.000Z",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229966003",
+            "display": "cNX"
+          },
+          {
+            "code": "1229967007",
+            "display": "American Joint Committee on Cancer cN0"
+          },
+          {
+            "code": "1229973008",
+            "display": "cN1"
+          },
+          {
+            "code": "1229975001",
+            "display": "American Joint Committee on Cancer cN1a (qualifier value)"
+          },
+          {
+            "code": "1229976000",
+            "display": "American Joint Committee on Cancer cN1b"
+          },
+          {
+            "code": "1229978004",
+            "display": "cN2"
+          },
+          {
+            "code": "1229981009",
+            "display": "American Joint Committee on Cancer cN2a"
+          },
+          {
+            "code": "1229982002",
+            "display": "cN2b"
+          }
+        ]
+      }
+    ]
+  }
+}

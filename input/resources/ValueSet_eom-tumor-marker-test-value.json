@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset",
+  "version": "0.0.1",
+  "title": "TumorMarkerTestResultValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6576-8",
+            "display": "Positive"
+          },
+          {
+            "display": "Negative",
+            "code": "LA6577-6"
+          },
+          {
+            "code": "LA11884-6",
+            "display": "Indeterminate"
+          },
+          {
+            "code": "LA13538-6",
+            "display": "Not Tested"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Valid values for Observation.value in EOM Tumor Marker Test",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TumorMarkerTestResultValueSet</h2><tt>https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tumor-marker-result-valueset</tt><p>Valid values for Observation.value in EOM Tumor Marker Test</p></div>"
+  },
+  "name": "EOM_Tumor_Marker_Test_ValueSet",
+  "date": "2025-01-22T00:00:00.000Z"
+}

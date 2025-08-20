@@ -122,6 +122,14 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Condition"
           },
           {
+            "key": "con-6",
+            "severity": "error",
+            "human": "Condition.verificationStatus SHALL be 'confirmed' if the Condition.clinicalStatus is present",
+            "expression": "Condition.clinicalStatus.exists() implies Condition.verificationStatus.coding.code = 'confirmed'",
+            "xpath": "not(exists(f:verificationStatus/f:coding[f:system/@value='http://terminology.hl7.org/CodeSystem/condition-ver-status' and f:code/@value='entered-in-error'])) or not(exists(f:clinicalStatus))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Condition"
+          },
+          {
             "key": "con-4",
             "severity": "error",
             "human": "If condition is abated, then clinicalStatus must be either inactive, resolved, or remission",
@@ -1218,7 +1226,7 @@
         "short": "active | recurrence | relapse | inactive | remission | resolved",
         "definition": "The clinical status of the condition.",
         "comment": "The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Condition.clinicalStatus",
@@ -4702,7 +4710,20 @@
       {
         "id": "Condition",
         "path": "Condition",
+        "constraint": [
+          {
+            "key": "con-6",
+            "severity": "error",
+            "human": "Condition.verificationStatus SHALL be 'confirmed' if the Condition.clinicalStatus is present",
+            "expression": "Condition.clinicalStatus.exists() implies Condition.verificationStatus.coding.code = 'confirmed'"
+          }
+        ],
         "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "min": 1
       }
     ]
   }

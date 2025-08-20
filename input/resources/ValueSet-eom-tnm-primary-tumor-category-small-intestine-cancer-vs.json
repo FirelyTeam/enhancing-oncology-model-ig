@@ -1,0 +1,117 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-eom-tnm-primary-tumor-category-small-intestine-cancer-vs",
+    "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-small-intestine-cancer-vs",
+    "name": "EOMTNMPrimaryTumorCategorySmallIntestineCancerVS",
+    "title": "EOM TNM Primary Tumor Category for Small Intestine Cancers Value Set",
+    "description": "Types of TNM Primary Tumor Categories for Small Intestine Cancers from SNOMED CT.",
+    "status": "draft",
+    "experimental": false,
+    "date": "2025-08-20T00:00:00.000Z",
+    "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "1222604002",
+                        "display": "American Joint Committee on Cancer cTX (qualifier value)"
+                    },
+                    {
+                        "code": "1228882005",
+                        "display": "American Joint Committee on Cancer cT0 (qualifier value)"
+                    },
+                    {
+                        "code": "1228884006",
+                        "display": "cTis"
+                    },
+                    {
+                        "code": "1228887004",
+                        "display": "American Joint Committee on Cancer cTis(LAMN) (qualifier value)"
+                    },
+                    {
+                        "code": "1228889001",
+                        "display": "American Joint Committee on Cancer cT1"
+                    },
+                    {
+                        "code": "1228892002",
+                        "display": "cT1a"
+                    },
+                    {
+                        "code": "1228895000",
+                        "display": "cT1b"
+                    },
+                    {
+                        "code": "1228929004",
+                        "display": "cT2"
+                    },
+                    {
+                        "code": "1228938002",
+                        "display": "American Joint Committee on Cancer cT3 (qualifier value)"
+                    },
+                    {
+                        "code": "1228944003",
+                        "display": "American Joint Committee on Cancer cT4"
+                    },
+                    {
+                        "code": "1228945002",
+                        "display": "American Joint Committee on Cancer cT4a"
+                    },
+                    {
+                        "code": "1228946001",
+                        "display": "cT4b"
+                    },
+                    {
+                        "code": "1228950008",
+                        "display": "pTX"
+                    },
+                    {
+                        "code": "1228951007",
+                        "display": "American Joint Committee on Cancer pT0"
+                    },
+                    {
+                        "code": "1228953005",
+                        "display": "American Joint Committee on Cancer pTis (qualifier value)"
+                    },
+                    {
+                        "code": "1228955003",
+                        "display": "pTis(LAMN)"
+                    },
+                    {
+                        "code": "1228957006",
+                        "display": "American Joint Committee on Cancer pT1"
+                    },
+                    {
+                        "code": "1228959009",
+                        "display": "pT1a"
+                    },
+                    {
+                        "code": "1228962007",
+                        "display": "American Joint Committee on Cancer pT1b (qualifier value)"
+                    },
+                    {
+                        "code": "1229852009",
+                        "display": "American Joint Committee on Cancer pT2 (qualifier value)"
+                    },
+                    {
+                        "code": "1229859000",
+                        "display": "American Joint Committee on Cancer pT3"
+                    },
+                    {
+                        "code": "1229864001",
+                        "display": "American Joint Committee on Cancer pT4"
+                    },
+                    {
+                        "code": "1229865000",
+                        "display": "American Joint Committee on Cancer pT4a"
+                    },
+                    {
+                        "code": "1229866004",
+                        "display": "American Joint Committee on Cancer pT4b"
+                    }
+                ]
+            }
+        ]
+    }
+}

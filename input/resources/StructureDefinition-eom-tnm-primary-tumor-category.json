@@ -134,7 +134,55 @@
             "expression": "dataAbsentReason.empty() or value.empty()",
             "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))",
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
-          }
+          },
+          {
+            "key": "con-implies-1",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary breast cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Breast Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-breast-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-breast-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-2",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary lung cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Lung Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-lung-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-lung-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-3",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary prostate cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Prostate Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-prostate-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-prostate-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-4",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary small intestine cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Small Intestine Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-small-intestine-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-small-intestine-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-5",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary colorectal cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Colorectal Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-colorectal-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-colorectal-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-6",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary lymphoma disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Lymphoma Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-lymphoma-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-lymphoma-vs'))",
+          },
+          {
+            "key": "con-implies-7",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary mesothelioma disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Mesothelioma Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-mesothelioma-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-mesothelioma-vs'))",
+          },
+          {
+            "key": "con-implies-8",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary appendix cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Appendix Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-appendix-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-appendix-cancer-vs'))",
+          },
         ],
         "mustSupport": true,
         "mapping": [
@@ -854,6 +902,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "final",
         "condition": [
           "ele-1"
         ],
@@ -1192,8 +1241,8 @@
         "short": "The cancer condition associated with staging assessment.",
         "definition": "Staging is associated with a particular primary cancer condition. Observation.focus is used to point back to that condition.",
         "comment": "Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., \"Blood Glucose\") and does not need to be represented separately using this element.  Use `specimen` if a reference to a specimen is required.  If a code is required instead of a resource use either  `bodysite` for bodysites or the standard extension [focusCode](extension-observation-focuscode.html).",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": 1,
         "base": {
           "path": "Observation.focus",
           "min": 0,
@@ -1606,7 +1655,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueCanonical": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-max-vs"
+              "valueCanonical": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-vs"
             }
           ],
           "strength": "preferred",
@@ -4404,7 +4453,69 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "constraint": [
+          // code.where(memberOf('{vsObservationCodes}')).exists() implies focus.resolve().ofType(Condition).code.where(memberOf('{vsConditionCodes}')).exists()
+          {
+            "key": "con-implies-1",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary breast cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Breast Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-breast-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-breast-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-2",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary lung cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Lung Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-lung-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-lung-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-3",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary prostate cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Prostate Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-prostate-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-prostate-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-4",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary small intestine cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Small Intestine Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-small-intestine-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-small-intestine-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-5",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary colorectal cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Colorectal Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-colorectal-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-colorectal-cancer-vs'))",
+          },
+          {
+            "key": "con-implies-6",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary lymphoma disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Lymphoma Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-lymphoma-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-lymphoma-vs'))",
+          },
+          {
+            "key": "con-implies-7",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary mesothelioma disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Mesothelioma Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-mesothelioma-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-mesothelioma-vs'))",
+          },
+          {
+            "key": "con-implies-8",
+            "severity": "error",
+            "human": "If Observation.focus is a Condition of a primary appendix cancer disorder, then Observation.value SHALL be from the EOM TNM Primary Tumor Category for Appendix Cancers Value Set",
+            "expression": "Observation.focus.resolve().ofType(Condition).code.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-appendix-cancer-disorder-vs')).exists() implies Observation.value.where(memberOf('https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-primary-tumor-category-appendix-cancer-vs'))",
+          },
+        ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "min": 1,
+        "max": 1
       }
     ]
   }

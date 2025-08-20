@@ -1,0 +1,24 @@
+{
+    "resourceType": "ValueSet",
+    "id": "eom-primary-appendix-cancer-disorder-vs",
+    "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-primary-appendix-cancer-disorder-vs",
+    "name": "EOMPrimaryAppendixCancerDisorderVS",
+    "title": "EOM Primary Appendix Cancer Disorder Value Set",
+    "description": "Types of Appendix cancer conditions from ICD-10-CM.",
+    "status": "draft",
+    "date": "2025-08-20T00:00:00.000Z",
+    "copyright": "The ICD-10 is copyrighted by the World Health Organization (WHO), which owns and publishes the classification. WHO has authorized the development of an adaptation of ICD-10 for use in the United States for U.S. government purposes. As agreed, all modifications to the ICD-10 must conform to WHO conventions for the ICD. ICD-10-CM was developed following a thorough evaluation by a Technical Advisory Panel and extensive additional consultation with physician groups, clinical coders, and others to assure clinical accuracy and utility.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "concept": [
+                    {
+                        "code": "C18.1",
+                        "display": "Malignant neoplasm of appendix"
+                    }
+                ]
+            }
+        ]
+    }
+}

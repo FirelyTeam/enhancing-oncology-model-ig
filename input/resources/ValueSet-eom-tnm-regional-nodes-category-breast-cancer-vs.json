@@ -1,0 +1,133 @@
+{
+  "resourceType": "ValueSet",
+  "id": "eom-tnm-regional-nodes-category-breast-cancer-vs",
+  "url": "https://globalalliantinc.com/enhancing-oncology-model/ValueSet/eom-tnm-regional-nodes-category-breast-cancer-vs",
+  "name": "EOMTNMRegionalNodesCategoryBreastCancerVS",
+  "title": "EOM TNM Regional Nodes Category for Breast Cancers Value Set",
+  "description": "Types of TNM Regional Nodes Categories for Breast Cancers from SNOMED CT.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-08-20T00:00:00.000Z",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229966003",
+            "display": "cNX"
+          },
+          {
+            "code": "1229967007",
+            "display": "American Joint Committee on Cancer cN0"
+          },
+          {
+            "code": "1229973008",
+            "display": "cN1"
+          },
+          {
+            "code": "1229974002",
+            "display": "cN1mi"
+          },
+          {
+            "code": "1229978004",
+            "display": "cN2"
+          },
+          {
+            "code": "1229981009",
+            "display": "American Joint Committee on Cancer cN2a"
+          },
+          {
+            "code": "1229982002",
+            "display": "cN2b"
+          },
+          {
+            "code": "1229984001",
+            "display": "cN3"
+          },
+          {
+            "code": "1229985000",
+            "display": "cN3a"
+          },
+          {
+            "code": "1229986004",
+            "display": "American Joint Committee on Cancer cN3b"
+          },
+          {
+            "code": "1229987008",
+            "display": "cN3c"
+          },
+          {
+            "code": "1229945006",
+            "display": "American Joint Committee on Cancer pNX (qualifier value)"
+          },
+          {
+            "code": "1229947003",
+            "display": "American Joint Committee on Cancer pN0"
+          },
+          {
+            "code": "1229949000",
+            "display": "American Joint Committee on Cancer pN0(i+)"
+          },
+          {
+            "code": "1229950000",
+            "display": "American Joint Committee on Cancer pN0(mol+) (qualifier value)"
+          },
+          {
+            "code": "1229951001",
+            "display": "American Joint Committee on Cancer pN1"
+          },
+          {
+            "code": "1229952008",
+            "display": "American Joint Committee on Cancer pN1mi (qualifier value)"
+          },
+          {
+            "code": "1229953003",
+            "display": "American Joint Committee on Cancer pN1a(sn) (qualifier value)"
+          },
+          {
+            "code": "1229954009",
+            "display": "American Joint Committee on Cancer pN1a (qualifier value)"
+          },
+          {
+            "code": "1229955005",
+            "display": "American Joint Committee on Cancer pN1b"
+          },
+          {
+            "code": "1229956006",
+            "display": "American Joint Committee on Cancer pN1c"
+          },
+          {
+            "code": "1229957002",
+            "display": "American Joint Committee on Cancer pN2"
+          },
+          {
+            "code": "1229959004",
+            "display": "pN2a"
+          },
+          {
+            "code": "1229960009",
+            "display": "American Joint Committee on Cancer pN2b (qualifier value)"
+          },
+          {
+            "code": "1229962001",
+            "display": "American Joint Committee on Cancer pN3"
+          },
+          {
+            "code": "1229963006",
+            "display": "American Joint Committee on Cancer pN3a (qualifier value)"
+          },
+          {
+            "code": "1229964000",
+            "display": "American Joint Committee on Cancer pN3b (qualifier value)"
+          },
+          {
+            "code": "1229965004",
+            "display": "American Joint Committee on Cancer pN3c"
+          }
+        ]
+      }
+    ]
+  }
+}
