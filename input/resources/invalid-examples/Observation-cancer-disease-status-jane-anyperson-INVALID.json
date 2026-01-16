@@ -1,0 +1,43 @@
+{
+    "resourceType": "Observation",
+    "id": "cancer-disease-status-jane-anyperson",
+    "meta": {
+        "profile": [
+            "https://globalalliantinc.com/enhancing-oncology-model/StructureDefinition/eom-cancer-disease-status"
+        ]
+    },
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "108257001",
+            "display" : "Anatomic pathology procedure (procedure)"
+          }]
+        }
+    }],
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "97509-4",
+                "display": "Cancer Disease Progression"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/cancer-patient-jane-anyperson"
+    },
+    "focus": [
+        {
+            "reference": "Condition/primary-cancer-condition-breast"
+        }
+    ],
+    "effectiveDateTime": "2018-11-01",
+    "performer": [
+        {
+            "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+        }
+    ]
+}
